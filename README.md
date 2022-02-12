@@ -1,27 +1,14 @@
 # NgFolderStructureTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+This is a test project to test feature, shared modules, as well as lazy-loaded modules.
 
-## Development server
+## What is missing
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+I did not add a CoreModule which would be a great addition for singleton services, like a data or authentication service.
 
-## Code scaffolding
+## References
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. https://medium.com/dev-jam/5-tips-best-practices-to-organize-your-angular-project-e900db08702e
+2. https://itnext.io/choosing-a-highly-scalable-folder-structure-in-angular-d987de65ec7
+3. https://angular.io/guide/lazy-loading-ngmodules
+4. https://angular.io/guide/module-types
