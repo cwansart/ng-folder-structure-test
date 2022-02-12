@@ -9,4 +9,12 @@ export class SearchComponent {
   firstName: string;
 
   lastName: string;
+
+  updateFirstName(firstName: string) {
+    this.firstName = firstName;
+  }
+
+  updateLastName(lastName: string) {
+    this.lastName = lastName;
+  }
 }

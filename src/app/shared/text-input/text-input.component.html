@@ -1,4 +1,9 @@
 <div class="text-input">
   <label [for]="id">{{ label }}</label>
-  <input [id]="id" [type]="type" [value]="value" />
+  <input
+    [id]="id"
+    [type]="type"
+    [value]="value"
+    (change)="updateValue($any($event.target).value)"
+  />
 </div>

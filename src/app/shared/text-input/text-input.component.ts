@@ -1,4 +1,10 @@
-import { Component, Input, OnChanges } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  Output,
+} from '@angular/core';
 
 @Component({
   selector: 'app-text-input',
@@ -15,9 +21,16 @@ export class TextInputComponent implements OnChanges {
   @Input()
   value: string = '';
 
+  @Output()
+  changeValue = new EventEmitter<string>();
+
   id: string;
 
   ngOnChanges() {
     this.id = this.label.toLowerCase().replace(' ', '-') + '-text-input';
+  }
+
+  updateValue(value: string) {
+    this.changeValue.emit(value);
   }
 }

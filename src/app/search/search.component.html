@@ -3,9 +3,11 @@
   type="text"
   label="First name"
   [value]="firstName ?? ''"
+  (changeValue)="updateFirstName($event)"
 ></app-text-input>
 <app-text-input
   type="text"
   label="Last name"
   [value]="lastName ?? ''"
+  (changeValue)="updateLastName($event)"
 ></app-text-input>
