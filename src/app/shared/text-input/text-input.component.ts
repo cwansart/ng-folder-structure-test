@@ -13,7 +13,7 @@ export class TextInputComponent implements OnChanges {
   type: 'text';
 
   @Input()
-  value: string;
+  value: string = '';
 
   id: string;
 
